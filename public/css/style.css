@@ -59,3 +59,14 @@ section#cards div.card p#type {
     font-size: 2rem;
     justify-content: center;
 }    
+
+section#cad {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section#cad h2{
+    width: 100%;
+    text-align: center;
+}

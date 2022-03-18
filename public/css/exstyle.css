@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Teko, sans-serif;
+}
+
+header {
+    width: 99.05vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 300px;
+    width: 100vw;
+}
+
+header img#logo {
+    width: 400px;
+    margin-top: -18rem;
+    margin-left: -1.8rem;
+}
+
+/* header h1 {
+    color: rgb(255, 251, 0);
+    font-size: 8rem;
+    text-shadow:  .20rem .20rem .20rem rgb(0, 47, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -14rem;
+} */
+
+body {
+    background-color: rgb(144, 144, 144);
+}
+
+main {
+    margin: 0 10rem 0 10rem;
+}
+
+section#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;   
+}
+
+section#cards div.card {
+    width: 20rem;
+    box-shadow: 3px 3px #00000020, -1em 0 0.4em #00000054;
+    margin-top: 2rem;
+    background-color: #fff;
+}
+
+section#cards div.card img {
+    width: 100%;
+}
+
+section#cards div.card h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#cards div.card p#text {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+section#cards div.card p#type {
+    display: flex;
+    padding: 0.5rem;
+    font-size: 2rem;
+    justify-content: center;
+}    
+
+section#cad {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+
+section#cad h2{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+section#cad form{
+    width: 50%;
+
+}
+
+section#cad form input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    outline: none;
+    border: solid 2px rgb(134, 134, 134);
+    margin: 0  1rem 1rem 1rem;
+}
+
+section#cad form label {
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
+section#cad form button {
+    padding: .8rem;
+    font-size: 1.5rem;
+    width: 25%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: blue;
+    border: solid .5px blue;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+section#cad form button:hover {
+    background-color: blue;
+    color: #fff;
+    box-shadow: 3px 3px rgba(36, 36, 36, 0.397), -.2em 0 0.4em rgba(53, 53, 53, 0.568);
+  
+}

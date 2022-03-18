@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Pokedex</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/exstyle.css">
 </head>
 
 <body>
     <header> 
-        <h1>Pokedex</h1>
+        <img src="img/Pomeon Cover.png" alt="Ilustração pokebola">
+        <img id="logo" src="https://raw.githubusercontent.com/sleduardo20/pokedex/0671af442dff1d8f7141e49eb83b438885bbc9e9/public/img/logo.svg" alt="Logo pokedex">
+        <!-- <h1>Pokedex</h1> -->
     </header>
 
     <main> 
@@ -25,6 +27,27 @@
                 </div>
             <% }) %>
         
+        </section>
+        
+        <section id="cad"> 
+            <h2> Cadastre um novo Pokemon! </h1>
+
+                <form action="/add" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                    
+                    <label for="descricao">Descrição:</label>
+                    <input type="text" id="descricao" name="descricao">
+
+                    <label for="tipo">Tipo:</label>
+                    <input type="text" id="tipo" name="tipo">
+
+                    <label for="imagem">Link da Imagem</label>
+                    <input type="text" id="img" name="img">
+
+                    <button id="Cadastro" type="submit">Cadastrar</button>
+                </form>
+
         </section>
     </main>
 </body>
