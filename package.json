@@ -2,6 +2,7 @@
   "name": "projeto_blue-projetomvc",
   "version": "1.0.0",
   "description": "Projeto MVC, 2 projeto do modulo",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index",
