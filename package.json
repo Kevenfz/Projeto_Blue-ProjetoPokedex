@@ -1,0 +1,27 @@
+{
+  "name": "projeto_blue-projetomvc",
+  "version": "1.0.0",
+  "description": "Projeto MVC, 2 projeto do modulo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevenfz/Projeto_Blue-ProjetoMVC.git"
+  },
+  "author": "Keven Ferreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kevenfz/Projeto_Blue-ProjetoMVC/issues"
+  },
+  "homepage": "https://github.com/Kevenfz/Projeto_Blue-ProjetoMVC#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  }
+}
