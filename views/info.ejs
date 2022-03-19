@@ -5,34 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Pokedex</title>
-    <link rel="stylesheet" href="css/exstyle.css">
+    <link rel="stylesheet" href="/css/info.css">
 </head>
 
 <body>
-        <header> 
-            <div id="cabeca"></div>
-            <img id="logo" src="https://raw.githubusercontent.com/sleduardo20/pokedex/0671af442dff1d8f7141e49eb83b438885bbc9e9/public/img/logo.svg" alt="Logo pokedex">
-        </header>
+    <header> 
+        <div id="cabeca"></div>
+        <img id="logo" src="https://raw.githubusercontent.com/sleduardo20/pokedex/0671af442dff1d8f7141e49eb83b438885bbc9e9/public/img/logo.svg" alt="Logo pokedex">
+    </header>
 
     <main> 
-        <section id="cards">
-            
-            <% pokemons.forEach((pokemon) => { %>
-            <a href="/info/<%= pokemon.id %>">
+        <div id="cards">
+            <% pokemonAtual.forEach((pokemon) => { %>
                 <div class="card">
                     <img src="<%= pokemon.img %>" alt="Ilustração do Pokemon">
                     <h2> <%= pokemon.nome %> - Nº <%= pokemon.id %>  </h2>
                     <p id="text"> <%= pokemon.descricao %> </p>
                     <p id="type"> Type:  <%= pokemon.tipo %> </p>
                 </div>
-            </a>
             <% }) %>
+        </div>
         
-        </section>
-        
-        <section id="cad"> 
-            <h2> Cadastrar novo Pokemon! </h1>
+        <div>
+            <h2> Cadastrar novo Pokemon!</h2>
+        </div>
 
+        <div id="update"> 
+
+            <div> 
+                <img src="https://78.media.tumblr.com/620787c46cc96d7bee6bc7bb9e9a2490/tumblr_nn8445VTn81rsx00qo1_500.gif" alt="pokedex"> </div>
+                
                 <form action="/add" method="post">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome">
@@ -49,8 +51,7 @@
                     <button id="Cadastro" type="submit">Cadastrar</button>
                 </form>
 
-        </section>
-
+            </div>
     </main>
 </body>
 

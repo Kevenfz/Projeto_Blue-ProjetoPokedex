@@ -30,79 +30,77 @@ body {
 }
 
 main {
-    margin: 0 10rem 0 10rem;
-    margin-top: 6rem;
-}
-
-section#cards {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 6rem;
+    flex-direction: column;
     justify-content: center;
-    /* margin-top: .6rem;  */
+    align-items: center;
+    gap: 20px; 
 }
 
-a {
-    text-decoration: none;
-    color: black;
+
+div#cards {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem; 
 }
 
-section#cards div.card:hover{
-    transform: scale(1.06);
-    background-color: rgb(255, 57, 57);
-}
-
-section#cards div.card {
-    width: 20rem;
+div#cards div.card {
+    width: 25rem;
     box-shadow: 3px 3px #00000020, -1em 0 0.4em #00000054;
-    margin-top: 2rem;
     background-color: #fff;
     text-transform: none;
 
 }
 
-section#cards div.card img {
+div#cards div.card img {
     width: 100%;
 }
 
-section#cards div.card h2 {
+div#cards div.card h2 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-section#cards div.card p#text {
+div#cards div.card p#text {
     padding: 1rem;
     font-size: 1.5rem;
     text-align: center;
 }
 
-section#cards div.card p#type {
+
+div#cards div.card p#type {
     display: flex;
     padding: 0.5rem;
     font-size: 2rem;
     justify-content: center;
 }    
 
-section#cad {
+div#update {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 5rem;
+    gap: 1rem;
+    width: 100%;
+    margin-left: -45px;
 }
 
-section#cad h2{
+div h2{
     width: 100%;
     text-align: center;
-    padding-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 20pt;
 }
 
-section#cad form{
-    width: 50%;
-
+div#update form{
+    width: 30%;
+    padding: 2rem;
+    margin-top: -1rem;
 }
 
-section#cad form input {
+div#update form input {
     width: 100%;
     padding: 0.5rem;
     font-size: 1.5rem;
@@ -111,13 +109,13 @@ section#cad form input {
     margin: 0  1rem 1rem 1rem;
 }
 
-section#cad form label {
+div#update form label {
     font-size: 1.6rem;
     margin: 1rem;
 }
 
-section#cad form button {
-    padding: .8rem;
+div#update form button {
+    padding: .5rem;
     font-size: 1.5rem;
     width: 25%;
     display: flex;
@@ -129,9 +127,10 @@ section#cad form button {
     border: solid .5px #3564ff;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    /* margin-left: -10px; */
 }
 
-section#cad form button:hover {
+div#update form button:hover {
     background-color: #3564ff;
     color: #fff;
     box-shadow: 3px 3px rgba(36, 36, 36, 0.397), -.2em 0 0.4em rgba(53, 53, 53, 0.568);
