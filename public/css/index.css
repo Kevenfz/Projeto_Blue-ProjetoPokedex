@@ -24,6 +24,19 @@ header img#logo {
     margin-top: -13rem;
 }
 
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+
+ul a.t1 {
+    text-decoration: none;
+    font-size: 14pt;
+}
 
 body {
     background-color: #fff;
@@ -55,7 +68,7 @@ section#cards div.card:hover{
 section#cards div.card {
     width: 20rem;
     box-shadow: 3px 3px #00000020, -1em 0 0.4em #00000054;
-    margin-top: 2rem;
+    margin-top: 1rem;
     background-color: #fff;
     text-transform: none;
 
@@ -84,25 +97,25 @@ section#cards div.card p#type {
     justify-content: center;
 }    
 
-section#cad {
+section#cadastro {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 5rem;
 }
 
-section#cad h2{
+section#cadastro h2{
     width: 100%;
     text-align: center;
     padding-bottom: 2rem;
 }
 
-section#cad form{
+section#cadastro form{
     width: 50%;
 
 }
 
-section#cad form input {
+section#cadastro form input {
     width: 100%;
     padding: 0.5rem;
     font-size: 1.5rem;
@@ -111,17 +124,16 @@ section#cad form input {
     margin: 0  1rem 1rem 1rem;
 }
 
-section#cad form label {
+section#cadastro form label {
     font-size: 1.6rem;
     margin: 1rem;
 }
 
-section#cad form button {
+section#cadastro form button {
     padding: .8rem;
     font-size: 1.5rem;
     width: 25%;
     display: flex;
-    margin: 0 auto;
     justify-content: center;
     align-items: center;
     background-color: #fff;
@@ -129,10 +141,22 @@ section#cad form button {
     border: solid .5px #3564ff;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    margin-left: 215px;
+
 }
 
-section#cad form button:hover {
+section#cadastro form button:hover {
     background-color: #3564ff;
     color: #fff;
     box-shadow: 3px 3px rgba(36, 36, 36, 0.397), -.2em 0 0.4em rgba(53, 53, 53, 0.568);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff3535;
+    width: 100%;
+    height: 90px;
+    margin-top: 2rem;
 }

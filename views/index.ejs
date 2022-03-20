@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Pokedex</title>
-    <link rel="stylesheet" href="css/exstyle.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -13,7 +13,15 @@
             <div id="cabeca"></div>
             <img id="logo" src="https://raw.githubusercontent.com/sleduardo20/pokedex/0671af442dff1d8f7141e49eb83b438885bbc9e9/public/img/logo.svg" alt="Logo pokedex">
         </header>
-
+        
+        <nav>
+            <ul>
+                <li> <a href="<%= "index.ejs" %> "> <h2>Home</h2> </a></li>
+                <li><a class="t1" href="#cadastro"> Cadastro</a></li>
+                <li><a class="t1" href="#cards"> Pokemons</a></li>
+            </ul>
+        </nav>        
+        
     <main> 
         <section id="cards">
             
@@ -21,8 +29,7 @@
             <a href="/info/<%= pokemon.id %>">
                 <div class="card">
                     <img src="<%= pokemon.img %>" alt="Ilustração do Pokemon">
-                    <h2> <%= pokemon.nome %> - Nº <%= pokemon.id %>  </h2>
-                    <p id="text"> <%= pokemon.descricao %> </p>
+                    <img src="https://cdn.dribbble.com/users/1081076/screenshots/2832850/pokemongo.gif" alt="pokedex">
                     <p id="type"> Type:  <%= pokemon.tipo %> </p>
                 </div>
             </a>
@@ -30,7 +37,7 @@
         
         </section>
         
-        <section id="cad"> 
+        <section id="cadastro"> 
             <h2> Cadastrar novo Pokemon! </h1>
 
                 <form action="/add" method="post">
@@ -43,6 +50,15 @@
                     <label for="tipo">Tipo:</label>
                     <input type="text" id="tipo" name="tipo">
 
+                    <label for="tamanho">Tamanho:</label>
+                    <input type="text" id="tamanho" name="tamanho">
+
+                    <label for="peso">Peso:</label>
+                    <input type="text" id="peso" name="peso">
+
+                    <label for="genero">Gênero:</label>
+                    <input type="text" id="genero" name="genero">
+
                     <label for="imagem">Link do Gif ou Imagem:</label>
                     <input type="text" id="img" name="img">
 
@@ -52,6 +68,9 @@
         </section>
 
     </main>
+    <footer>
+        <h3>Developed by Keven Ferreira Moraes</h3>
+    </footer>
 </body>
 
 </html> 

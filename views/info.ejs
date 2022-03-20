@@ -14,6 +14,8 @@
         <img id="logo" src="https://raw.githubusercontent.com/sleduardo20/pokedex/0671af442dff1d8f7141e49eb83b438885bbc9e9/public/img/logo.svg" alt="Logo pokedex">
     </header>
 
+    
+
     <main> 
         <div id="cards">
             <% pokemonAtual.forEach((pokemon) => { %>
@@ -21,6 +23,11 @@
                     <img src="<%= pokemon.img %>" alt="Ilustração do Pokemon">
                     <h2> <%= pokemon.nome %> - Nº <%= pokemon.id %>  </h2>
                     <p id="text"> <%= pokemon.descricao %> </p>
+                <div id="bloco"> 
+                    <p class="text"> Altura:  <%= pokemon.tamanho %> </p>
+                    <p class="text"> Peso:  <%= pokemon.peso %></p>
+                    <p class="text"> Gênero:  <%= pokemon.genero %></p>
+                </div>
                     <p id="type"> Type:  <%= pokemon.tipo %> </p>
                 </div>
             <% }) %>
@@ -33,7 +40,7 @@
         <div id="update"> 
 
             <div> 
-                <img src="https://78.media.tumblr.com/620787c46cc96d7bee6bc7bb9e9a2490/tumblr_nn8445VTn81rsx00qo1_500.gif" alt="pokedex"> </div>
+                <img id="img" src="https://78.media.tumblr.com/620787c46cc96d7bee6bc7bb9e9a2490/tumblr_nn8445VTn81rsx00qo1_500.gif" alt="pokedex"> </div>
                 
                 <form action="/add" method="post">
                     <label for="nome">Nome:</label>
@@ -45,14 +52,27 @@
                     <label for="tipo">Tipo:</label>
                     <input type="text" id="tipo" name="tipo">
 
+                    <label for="tamanho">Tamanho:</label>
+                    <input type="text" id="tamanho" name="tamanho">
+
+                    <label for="peso">Peso:</label>
+                    <input type="text" id="peso" name="peso">
+
+                    <label for="genero">Gênero:</label>
+                    <input type="text" id="genero" name="genero">
+
                     <label for="imagem">Link do Gif ou Imagem:</label>
                     <input type="text" id="img" name="img">
 
-                    <button id="Cadastro" type="submit">Cadastrar</button>
+                    <button id="Cadastro" type="submit" >Cadastrar</button>
                 </form>
 
             </div>
     </main>
+
+    <footer>
+        <h3>Developed by Keven Ferreira Moraes</h3>
+    </footer>
 </body>
 
 </html> 
