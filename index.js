@@ -80,7 +80,7 @@ app.post("/add", (req, res) => {
     const pokemon = req.body;
     pokemon.id = pokemons.length + 1;
     pokemons.push(pokemon)
-    res.redirect("/");
+    res.redirect("/#cards");
 });
 
 app.get("/info/:id", (req, res) => {
