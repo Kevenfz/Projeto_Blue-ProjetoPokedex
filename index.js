@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const req = require("express/lib/request");
 const app = express();
-const port = process.env.PORT || 3003;
+const port = process.env.PORT || 3000;
 const path = require("path");
 
 app.set("view engine", "ejs");
