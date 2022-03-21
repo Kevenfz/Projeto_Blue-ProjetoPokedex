@@ -110,6 +110,8 @@ a {
 section#cards div.card:hover{
     transform: scale(1.06);
     background-color: #ff3535;
+    transition: all .2s ease-in-out;
+
 }
 
 section#cards div.card {
