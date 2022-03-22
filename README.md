@@ -13,3 +13,7 @@ Node.JS -
 ## Personal
 Keven Ferreira Moraes
 <a>https://www.linkedin.com/in/keven-ferreira-moraes-4327a463/</a>
+
+##Link Pokédex
+Link do deploy feito pelo Heroku.
+https://pokedex-blue02.herokuapp.com
