@@ -1,7 +1,7 @@
 # Projeto Pokemon - Semana 2 - BlueEdTech
 
 ## Descrição do Projeto
-Este projeto foi feito com fins de aprendizagem no cruso de FullStack (Enfase backend).
+Este projeto foi feito com fins de aprendizagem no curso de FullStack (Enfase backend).
 
 ## Stacks
 Javascript - 
